@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    container_name: hellotypescript
+    ports: 
+      - "80:80"
+    volumes:
+      - ./HelloWorld.html:/usr/share/nginx/html/HelloWorld.html
+      - ./HelloWorld.js:/usr/share/nginx/html/HelloWorld.js
